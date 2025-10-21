@@ -19,6 +19,7 @@ names.Add("Aysun");
 foreach (var item in names)
 {
     Console.WriteLine($"{item.GetType().Name} - {item}");
-    
+    //koleksiyon değiştirilemez.
+    //item değişkenine değer atanamaz
 }
 

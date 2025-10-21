@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFunctions", "SimpleFu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuctionParameters", "FuctionParameters\FuctionParameters.csproj", "{DCCD7AC8-FB39-4A79-9170-04F354CB80F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadAnOptional", "OverloadAnOptional\OverloadAnOptional.csproj", "{BEF38CB1-E0BA-400E-A3F3-57F6FDD3FA68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DCCD7AC8-FB39-4A79-9170-04F354CB80F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCCD7AC8-FB39-4A79-9170-04F354CB80F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCCD7AC8-FB39-4A79-9170-04F354CB80F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF38CB1-E0BA-400E-A3F3-57F6FDD3FA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF38CB1-E0BA-400E-A3F3-57F6FDD3FA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF38CB1-E0BA-400E-A3F3-57F6FDD3FA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF38CB1-E0BA-400E-A3F3-57F6FDD3FA68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

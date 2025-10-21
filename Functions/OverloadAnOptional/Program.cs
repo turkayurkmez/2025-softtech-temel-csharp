@@ -7,7 +7,7 @@
             Console.WriteLine("Hello, World!");
             double sonuc1 = alanHesapla(3, "Daire");
             double sonuc2 = alanHesapla(4, 6, "Üçgen");
-            //Geometri.AlanHesapla(3,5,)
+         
 
             double sonuc3 = OpsiyonelAlanHesapla(4);
             double sonuc4 = OpsiyonelAlanHesapla(5, sekil: "Daire");

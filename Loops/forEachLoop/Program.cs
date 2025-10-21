@@ -10,7 +10,7 @@ arrayList.Add("Türkay");//boxing
 arrayList.Add(45);
 arrayList.Add(true);
 
-int value = (int)arrayList[0]; //unboxing
+int value = (int)arrayList[1]; //unboxing
 
 List<string> names = new List<string>();
 names.Add("Selçuk");
@@ -18,6 +18,7 @@ names.Add("Aysun");
 
 foreach (var item in names)
 {
+    Console.WriteLine($"{item.GetType().Name} - {item}");
     
 }
 

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace AbstractANDInterface
 {
+    public interface IPrintable
+    {
+        void Print();
+    }
     public abstract class Document
     {
         public void Copy(string from, string to)
@@ -20,21 +24,20 @@ namespace AbstractANDInterface
         //Her dokümanın kayıt işlemi farklı olacak!
         public abstract void Save(string filename);        
         public abstract void Load(string filename);
-        public abstract void Print();
+       
 
     }
 
-    public class WordDocument : Document
+    public class WordDocument : Document, IPrintable
     {
         public override void Load(string filename)
         {
             Console.WriteLine("Word yükleniyor");
         }
 
-        public override void Print()
+        public void Print()
         {
             Console.WriteLine("Word çıktısı.....");
-
         }
 
         public override void Save(string filename)
@@ -44,14 +47,14 @@ namespace AbstractANDInterface
         }
     }
 
-    public class ExcelDocument: Document
+    public class ExcelDocument: Document, IPrintable
     {
         public override void Load(string filename)
         {
             Console.WriteLine("Excel yükleniyor");
         }
 
-        public override void Print()
+        public void Print()
         {
             Console.WriteLine("Excel çıktısı.....");
 
@@ -71,11 +74,7 @@ namespace AbstractANDInterface
             Console.WriteLine("PDF yükleniyor");
         }
 
-        public override void Print()
-        {
-            Console.WriteLine("PDF çıktısı.....");
-
-        }
+       
 
         public override void Save(string filename)
         {
@@ -86,7 +85,7 @@ namespace AbstractANDInterface
 
     public class DocumentPrinter
     {
-        public void Print(Document document)
+        public void Print(IPrintable document)
         {
             document.Print();
         }

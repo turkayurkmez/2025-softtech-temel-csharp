@@ -7,6 +7,6 @@ ExcelDocument excel = new ExcelDocument();
 WordDocument word = new WordDocument();
 
 DocumentPrinter printer = new DocumentPrinter();
-printer.Print(pdf);
+//printer.Print(pdf);
 printer.Print(excel);
 printer.Print(word);

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "Extensi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "usingDelegates", "usingDelegates\usingDelegates.csproj", "{F438A67D-B6A0-4087-9652-50782EF276DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQSamples", "LINQSamples\LINQSamples.csproj", "{CDAF38FD-E3B3-4950-9BE0-C018BA8A9D63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F438A67D-B6A0-4087-9652-50782EF276DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F438A67D-B6A0-4087-9652-50782EF276DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F438A67D-B6A0-4087-9652-50782EF276DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDAF38FD-E3B3-4950-9BE0-C018BA8A9D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDAF38FD-E3B3-4950-9BE0-C018BA8A9D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDAF38FD-E3B3-4950-9BE0-C018BA8A9D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDAF38FD-E3B3-4950-9BE0-C018BA8A9D63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

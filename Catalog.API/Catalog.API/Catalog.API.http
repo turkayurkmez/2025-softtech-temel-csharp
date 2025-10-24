@@ -4,3 +4,52 @@ GET {{Catalog.API_HostAddress}}/products/
 Accept: application/json
 
 ###
+
+GET {{Catalog.API_HostAddress}}/products/6
+Accept: application/json
+
+###
+
+GET {{Catalog.API_HostAddress}}/products/search/Mouse
+Accept: application/json
+
+###
+
+
+GET {{Catalog.API_HostAddress}}/products/getbycategory/1
+Accept: application/json
+###
+
+POST {{Catalog.API_HostAddress}}/products/
+Content-Type: application/json
+
+{
+  "name": "Mouse",
+  "description": "Mouse description",
+  "price": 299.99,
+  "rating": 5,
+  "stock": 10,
+  "categoryId": 1
+}
+
+###
+
+PUT {{Catalog.API_HostAddress}}/products/6
+Content-Type: application/json
+
+{
+  "id": 6,
+  "name": "Updated Mouse",
+  "description": "Updated mouse description",
+  "price": 349.99,
+  "rating": 4,
+  "stock": 15,
+  "categoryId": 1
+}
+
+###
+
+DELETE {{Catalog.API_HostAddress}}/products?id=6
+
+###
+

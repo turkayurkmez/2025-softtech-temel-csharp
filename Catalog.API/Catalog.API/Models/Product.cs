@@ -15,7 +15,7 @@
         public DateTime? UpdatedDate { get; set; }
 
         //Navigation Property
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
 
         public int CategoryId { get; set; }
 

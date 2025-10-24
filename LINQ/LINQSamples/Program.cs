@@ -14,9 +14,12 @@ Console.WriteLine("Tüm Ürünler");
 Console.WriteLine(new string('-',20));
 justNameAndPriceOfProducts.ForEach(dto => Console.WriteLine($"{dto.UrunAdi}{new string('.',5)}{dto.Fiyat}"));
 
+
 List<Product> getProductsBetweenPrices(List<Product> products, decimal minPrice,  decimal maxPrice) => products.Where(p=>p.Price >= minPrice &&  p.Price <= maxPrice)
              .OrderBy(p=>p.Price)
              .ToList();
+
+
 Console.WriteLine(new string('-', 20));
 
 var betweenResult = getProductsBetweenPrices(allProducts, 500, 2000);
@@ -64,6 +67,40 @@ foreach (var category in categoryStats)
 {
     Console.WriteLine($"{category.CategoryName}....{category.ProductCount}....{category.AveragePrice}....{category.MaxPrice}....{category.MinPrice}....{category.TotalPrice}");
 }
+
+var productChunks = allProducts.Chunk(8);
+
+int chunkNo = 1;
+foreach (var pChunk in productChunks)
+{
+    Console.WriteLine($"{chunkNo++}. Chunk");
+    for (int i = 0; i < pChunk.Length; i++)
+    {
+        Console.WriteLine($"[{i}.] {pChunk[i].Name}");
+    }
+}
+
+var countByResult = allProducts.CountBy(p => p.Category);
+foreach (var item in countByResult)
+{
+    Console.WriteLine($"{item.Key.Name} - {item.Value}");
+}
+
+var productDetail = allProducts.FirstOrDefault(p => p.Id == 5);
+
+var singleDifference = allProducts.SingleOrDefault(p => p.Id == 6);
+
+var lookingLookUp = allProducts.ToLookup(p => p.CategoryId);
+foreach (var item in lookingLookUp)
+{
+   
+    var lookResult = item.Select(g=>g.Name);
+
+    lookResult.ToList().ForEach( x => Console.WriteLine(item.Key + "-"+ x));
+    Console.WriteLine("--------------------------");
+}
+
+
 
 
 

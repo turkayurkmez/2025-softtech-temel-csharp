@@ -14,3 +14,6 @@ for (int i = 1; i < 11; i++)
 {
     Console.WriteLine(random.NextPassword(i));
 }
+
+Console.WriteLine("Bugün günlerden: " + DateTime.Now.DayOfWeek.ToTurkish());
+Console.WriteLine("Bugün günlerden: " + DateTime.Now.ToLongDateString());

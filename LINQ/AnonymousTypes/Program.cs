@@ -11,13 +11,13 @@ x = "selam";
 var productService = new ProductService();
 
 //LINQ Sorgusu: 
-//var products = from product in productService.GetProducts()
-//               where product.Price <= 500
-//               orderby product.Price
-//               select new { Name = product.Name, Price = product.Price };
+var products = from product in productService.GetProducts()
+               where product.Price <= 500
+               orderby product.Price
+               select new { Name = product.Name, Price = product.Price };
 
 //LINQ Extension:
-var products = productService.GetProducts()
+var productsExtension = productService.GetProducts()
                              .Where(p => p.Price <= 500)
                              .OrderBy(p => p.Price)
                              .Select(p => new { Name = p.Name, Price = p.Price });

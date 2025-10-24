@@ -60,5 +60,19 @@ namespace ExtensionMethods
 
             return generatedPassword.ToString();
         }
+
+        public static string ToTurkish(this DayOfWeek dayOfWeek)
+        {
+            return dayOfWeek switch
+            {
+                DayOfWeek.Friday => "Cuma",
+                DayOfWeek.Monday => "Pazartesi",
+                DayOfWeek.Tuesday => "Salı",
+                DayOfWeek.Wednesday => "Çarşamba",
+                DayOfWeek.Thursday => "Perşembe",
+                DayOfWeek.Saturday => "Cumartesi",
+                DayOfWeek.Sunday => "Pazar"
+            };
+        }
     }
 }
